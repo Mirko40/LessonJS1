@@ -26,11 +26,19 @@ function getSpeed() {
 };
 function exchDollar() {
     const CURS = 0.86;
-    let howDollars = +prompt("How many dollars to convert into euros?");
+    let howDollars = +prompt("How many dollars do you want to convert into euros?");
     alert(`You have ${CURS * howDollars} euros`)
 };
 
 function getFiles() {
     let volumeF = +prompt("What is the size of the flash drive in GB?");
-    alert(`You can copy ${((volumeF * 1024) / 820).toFixed(0)} files`)
+    alert(`You can copy ${(volumeF * 1024 / 820).toFixed(0)} files`)
+};
+
+function getСhocolate() {
+    let moneyWallet = +prompt("How much money in your wallet (dollars)?");
+    let costChocolate = +prompt("What is the cost of chocolate (dollars)?");
+    let buyChocolate = ((moneyWallet / costChocolate).toFixed(0))
+    alert(`You can buy ${buyChocolate} chocolates`);
+    alert(`You will have $ ${moneyWallet - buyChocolate * costChocolate} left`);
 };

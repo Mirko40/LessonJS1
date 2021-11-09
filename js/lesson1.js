@@ -59,3 +59,9 @@ function getReverseNumber() {
 
     alert(`Resault of reverse is ${getNumber}`);
 };
+
+function getDepo() {
+    let getDepo = +prompt("What is your deposit amount per two mounth (dollars)?");
+    alert(`The amount of the deposit is ${(getDepo * 5 / 12 * 2 / 100).toFixed(2)} dollars`);
+
+}

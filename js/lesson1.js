@@ -42,3 +42,20 @@ function getСhocolate() {
     alert(`You can buy ${buyChocolate} chocolates`);
     alert(`You will have $ ${moneyWallet - buyChocolate * costChocolate} left`);
 };
+
+function getReverseNumber() {
+    let getNumber = +prompt("What is a number do you want to convert?");
+    var str = String(getNumber);
+
+    let a = str.split("");
+
+    let b = a.reverse();
+
+    var str = b.join("");
+
+    getNumber = str;
+
+    getNumber = Number(getNumber);
+
+    alert(`Resault of reverse is ${getNumber}`);
+};

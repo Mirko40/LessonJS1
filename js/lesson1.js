@@ -38,7 +38,7 @@ function getFiles() {
 function getСhocolate() {
     let moneyWallet = +prompt("How much money in your wallet (dollars)?");
     let costChocolate = +prompt("What is the cost of chocolate (dollars)?");
-    let buyChocolate = ((moneyWallet / costChocolate).toFixed(0))
+    let buyChocolate = (Math.trunc(moneyWallet / costChocolate))
     alert(`You can buy ${buyChocolate} chocolates`);
     alert(`You will have $ ${moneyWallet - buyChocolate * costChocolate} left`);
 };
